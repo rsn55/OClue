@@ -1,0 +1,39 @@
+{
+  "weapons": [
+    "Candlestick",
+    "Knife",
+    "LeadPipe",
+    "Revolver",
+    "Rope",
+    "Wrench"
+  ],
+  "suspects": [
+    "Scarlet",
+    "Mustard",
+    "White",
+    "Green",
+    "Peacock",
+    "Plum"
+  ],
+  "rooms": [
+    "Ballroom",
+    "BilliardRoom",
+    "Conservatory",
+    "DiningRoom",
+    "Hall",
+    "Kitchen",
+    "Library",
+    "Lounge",
+    "Study"
+  ],
+  "passages": [
+    [
+      "Study",
+      "Kitchen"
+    ],
+    [
+      "Conservatory",
+      "Lounge"
+    ]
+  ]
+}

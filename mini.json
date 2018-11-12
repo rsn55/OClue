@@ -1,0 +1,18 @@
+{
+  "weapons": [
+    "Wrench",
+    "Knife",
+    "Rope"
+  ],
+  "suspects": [
+    "Plum",
+    "Green",
+    "White"
+  ],
+  "rooms": [
+    "Study",
+    "Hall",
+    "Lounge"
+  ],
+  "passages": []
+}

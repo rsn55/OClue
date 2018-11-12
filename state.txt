@@ -1,0 +1,40 @@
+Plum Knife Kitchen
+Start
+easy Peacock 6 false BilliardRoom LeadPipe Ballroom Conservatory
+easy Plum 5 false Study Green Lounge DiningRoom
+easy Mustard 4 false Kitchen Scarlet Revolver Hall
+easy White 3 false Library Mustard Candlestick Study
+easy Green 2 false Kitchen White Wrench BilliardRoom
+user Scarlet 1 true Hall Peacock Rope Library
+Done
+None
+1
+
+0
+Ballroom 
+BilliardRoom 
+Conservatory 
+DiningRoom 
+Hall 
+Kitchen 
+Library 
+Lounge 
+Study LL
+Candlestick 
+Knife 
+LeadPipe 
+Revolver 
+Rope 
+Wrench 
+Scarlet 
+Mustard 
+White 
+Green 
+Peacock 
+Plum 
+Data
+Peacock: LeadPipe Ballroom Conservatory
+Plum: Green Lounge DiningRoom
+Mustard: Scarlet Revolver Hall
+White: Mustard Candlestick Study
+Green: White Wrench BilliardRoom
