@@ -25,16 +25,12 @@ type command =
   | Show of card_str
   | Suggestion of solution_lst
   | Accusation of solution_lst
-  | Next 
   | Quit
-  | Solution
   | Cards
-  | Seen 
   | Notes
   | Write of (card_str * string)
   | Erase of (card_str * string)
   | Leaderboard of (level * string)
-  | OtherCards
   | Passages
   | Sneak
   | NoCards

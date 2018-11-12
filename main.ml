@@ -486,8 +486,6 @@ let rec loop (bd: Board.t) (state : Game_state.t) (l: level) (just_rolled: bool)
          Pervasives.exit 0 
        | false -> print_red "Your accusation was wrong. You lose.\n";
          Pervasives.exit 0 )
-    | Solution -> print_red ("Solution: " ^ (get_solution_str state [])); 
-      loop bd state l just_rolled 
     | Quit ->  print_blue "Thanks for playing.\n"; Pervasives.exit 0 
     | Save -> 
       (match l with 
@@ -499,11 +497,6 @@ let rec loop (bd: Board.t) (state : Game_state.t) (l: level) (just_rolled: bool)
     | Cards -> 
       print_blue (String.concat " " (["Your cards:"]@(user_to_cards state))
                  ); loop bd state l just_rolled 
-    | OtherCards -> print_blue (String.concat " " (all_cards state)); 
-      loop bd state l just_rolled
-    | Seen -> print_blue ("Seen: " ^ (String.concat " " 
-                                        (get_user_eliminated state))); 
-      loop bd state l just_rolled    
     | Notes -> 
       print_string ("\nIn order to add a custom note use command in format: " ^
                     "'write card asciisymbol' \n To remove a custom note use " ^
@@ -512,12 +505,7 @@ let rec loop (bd: Board.t) (state : Game_state.t) (l: level) (just_rolled: bool)
       print_tables notes_width bd state;
       loop bd state l just_rolled
     | Write (card_string, ascii_string) -> 
-      let user = get_user_player (get_players state) in
       if valid_card card_string bd then 
-        (* if not (satisfies_character_count (get_user_notes user) 
-                  (notes_width / 4)) then
-           print_string "Error max character count reached. Can't add note."
-           else  *)
         (loop bd ((update_user_notes_state (get_user_player 
                                               (get_players state)) 
                      state card_string ascii_string) true) l just_rolled)

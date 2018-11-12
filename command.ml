@@ -32,16 +32,12 @@ type command =
   | Show of card_str
   | Suggestion of solution_lst
   | Accusation of solution_lst
-  | Next 
   | Quit
-  | Solution
   | Cards
-  | Seen
   | Notes 
   | Write of (card_str * string)
   | Erase of (card_str * string)
   | Leaderboard of (level * string)
-  | OtherCards 
   | Passages
   | Sneak
   | NoCards
@@ -56,16 +52,12 @@ let create_command (lst : string list) : command =
   | "show"::x::[] -> Show x
   | "suggest"::x::y::z::[] -> Suggestion (x::y::[z])
   | "accuse"::x::y::z::[] -> Accusation (x::y::[z])
-  | "next"::[] -> Next
   | "quit"::[] -> Quit
-  | "solution"::[] -> Solution
   | "cards"::[] -> Cards
-  | "seen"::[] -> Seen
   | "notes"::[] -> Notes
   | "write" :: x::y::[] -> Write (x, y)
   | "erase" :: x::y::[] -> Erase (x,y)
   | "leaderboard" :: x :: y :: [] -> Leaderboard ((parse_level x),y)
-  | "othercards"::[] -> OtherCards
   | "passages"::[] -> Passages
   | "sneak"::[] -> Sneak
   | "nocards"::[] -> NoCards
