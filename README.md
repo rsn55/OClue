@@ -2,8 +2,6 @@
 A text-based, command-line version of Clue, the classic mystery game. Includes all the elements of the board game as well as options to compete against bots of various levels of intelligence.
 
 CREATED BY RACHEL NASH, MEREDITH DOBRZYNSKI, AND KAUSHIK RAVIKUMAR
-A project for CS 3110 at Cornell University
-
 
 Instructions to Play:
 
