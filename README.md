@@ -7,9 +7,12 @@ Instructions to Play:
 
 Run `make play` from the top level of this repository. You must have OCaml installed ([instructions](https://ocaml.org/docs/installing-ocaml)).
 
-From here, you can personalize the game by loading any JSON file that lists weapons, suspects, rooms, and secret passages. The file clue.json has the specifications of the classic board game and shows the general structure that must be used. You can just type 'clue.json' to use this one.
+From here, you can personalize the game by loading any JSON file that lists weapons, suspects, rooms, and secret passages. The file clue.json has the specifications of the classic board game and shows the general structure that must be used. You can just type `clue.json` to use this one.
 
-Then, you can select the difficulty level of the bots you want to play against. Level 'Easy' bots only eliminate cards shown to them directly. Level 'Medium' bots can eliminate cards by inference and observation of the moves of other players. Level 'Hard' bots make logical deductions based on every player's past and present moves. They also use probability to make more educated guesses and will try to hide their findings from other players.
+Then, you can select the difficulty level of the bots you want to play against: 
+- **Easy**: Bots only eliminate cards shown to them directly
+- **Medium**: Bots can eliminate cards by basic inferences and observation of the moves of other players
+- **Hard**: Bots make logical deductions based on every player's past and present moves. They also use probability to make more educated guesses and will try to hide their findings from other players.
 
 In the beginning of the game, you are told the name of the suspect that represents you, the cards in your hand, and your current room. Cards, start rooms, and suspect representations are assigned randomly. The rules of OClue are the same as the classic board game: you can only make a suggestion about your current room, the suspect of a suggestion is moved to the room of the suggestion, you can sneak through secret passages, see the locations of other players, make an accusation once you know the answer, etc. 
 However, since this game is text-based, you roll a die and either move to a new room or stay in your current location based on the outcome. This is unlike the board game, where you move the number of spaces that you roll.
