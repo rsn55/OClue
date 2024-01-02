@@ -1,11 +1,11 @@
 # OClue
 A text-based, command-line version of Clue, the classic mystery game. Includes all the elements of the board game as well as options to compete against bots of various levels of intelligence.
 
-CREATED BY RACHEL NASH, MEREDITH DOBRZYNSKI, AND KAUSHIK RAVIKUMAR
+CREATED BY RACHEL NASH, MEREDITH DOBRZYNSKI, AND KAUSHIK RAVIKUMAR AT CORNELL UNIVERSITY
 
 Instructions to Play:
 
-Download this repository and navigate to it in terminal. Run 'make play.'
+Run `make play` from the top level of this repository. You must have OCaml installed ([instructions](https://ocaml.org/docs/installing-ocaml)).
 
 From here, you can personalize the game by loading any JSON file that lists weapons, suspects, rooms, and secret passages. The file clue.json has the specifications of the classic board game and shows the general structure that must be used. You can just type 'clue.json' to use this one.
 
